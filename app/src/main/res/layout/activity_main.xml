@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:text="@string/tvTitle"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/edtStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edtStudentID" />
+
+    <EditText
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/tvYear" />
+
+    <Spinner
+        android:id="@+id/spnYear"
+        android:layout_width="390dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:entries="@array/years" />
+
+    <EditText
+        android:id="@+id/tvSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/tvSemester" />
+
+    <Spinner
+        android:id="@+id/spnSemester"
+        android:layout_width="373dp"
+        android:layout_height="33dp"
+        android:layout_margin="16dp"
+        android:entries="@array/semesters" />
+
+    <CheckBox
+        android:id="@+id/cbAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/cbAgreement" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="submit"
+        android:text="@string/btnSubmit" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="331dp"
+        android:layout_height="38dp"
+        android:layout_margin="16dp"
+        android:text="@string/btnCancel" />
+
+</LinearLayout>
